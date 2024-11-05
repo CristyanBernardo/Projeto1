@@ -17,23 +17,25 @@ header {
   
   /* Logo do header */
   header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    color: aqua;
+    text-decoration: none;
+    display: inline-block;
+    transition: .03s;
   }
 
   header h1:hover{
     transform: scale(0.9);
+    color: aqua;
+    border-color: aqua;
   }
   
   header a{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     transition: .02s;
     text-align: right;
+    text-decoration: none;
     display: inline-block;
     margin: 0 0px;
-    border-radius: 50%;
     
   }
 
@@ -75,9 +77,6 @@ header {
     text-decoration: none;
   }
   
-  nav ul li a:hover {
-    background-color: #555;
-  }
   
   /* Ajustes para telas grandes */
   @media (min-width: 768px) {
