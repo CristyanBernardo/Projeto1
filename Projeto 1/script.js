@@ -1,3 +1,5 @@
-function toggleMenu() {
-    document.querySelector("header").classList.toggle("menu-active");
-  }
+$(document).ready(function() {
+  $("#menu-toggle").click(function() {
+      $("#sidebar").toggleClass("visible");
+  });
+});
