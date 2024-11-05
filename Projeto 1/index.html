@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rol="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="style.css">
 
     <title>CN Tech</title>
 </head>
-<body>
- <header>
+<header>
     <h1>CN Tech</h1>
+    <button class="menu-button" onclick="toggleMenu()">
+        <i class="bi bi-list"></i> Menu
+    </button>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
  </header>
+
+ <script>
+  function toggleMenu() {
+    $("nav").slideToggle(300); // Efeito de deslizar com duração de 300ms
+  }
+ </script>
+
     
 </body>
 </html>

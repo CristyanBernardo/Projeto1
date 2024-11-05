@@ -1,0 +1,75 @@
+/* Estilos básicos */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Logo do header */
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  /* Botão de menu */
+  .menu-button {
+    font-size: 1.2em;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos do menu */
+  nav {
+    display: none; /* Oculto inicialmente */
+    background-color: #333;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    text-align: center;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Ajustes para telas grandes */
+  @media (min-width: 768px) {
+    nav {
+      display: block;
+      width: auto;
+    }
+    
+    nav ul {
+      display: flex;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+  }
