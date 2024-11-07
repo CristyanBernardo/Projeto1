@@ -80,6 +80,40 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Estilo do botão de ícone */
+.icon-button {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* Menu suspenso (inicialmente oculto) */
+.dropdown-menu {
+  display: none;
+  list-style-type: none;
+  border-radius: 0px;
+  background-color: #333;
+  top: 50px;
+  left: 0;
+}
+
+/* Estilo dos itens da lista */
+.dropdown-menu li {
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dropdown-menu li:hover {
+  background-color: #333;
+}
+
 /* Barra de pesquisa */
 .search-tech {
   display: flex;
