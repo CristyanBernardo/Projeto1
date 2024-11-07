@@ -7,116 +7,81 @@ body, html {
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  box-shadow: 0px 0px 10px #333;
-  color: #fff;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    box-shadow: 0px 0px 10px #333;
+    color: #fff;
+  }
+  
+  /* Logo do header */
+  header h1 {
+    text-decoration: none;
+    display: inline-block;
+    transition: .03s;
+  }
 
-/* Logo do header */
-header h1 {
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
-  text-shadow: 2px 2px 4px aqua;
-}
+  header h1:hover{
+    transform: scale(0.9);
+    color: aqua;
+    border-color: aqua;
+  }
+  
+  header a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: .02s;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0px;
+    
+  }
 
-header h1:hover {
-  transform: scale(0.9);
-  color: aqua;
-}
-
-/* Links do header */
-header a {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0;
-  transition: 0.2s;
-  text-align: right;
-  text-shadow: 2px 2px 4px aqua;
-}
-
-header a:hover {
-  transform: scale(0.9);
-  color: aqua;
-}
-
-/* Botão de menu */
-.menu-button {
-  font-size: 1.2em;
-  background-color: #444;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Menu */
-nav {
-  display: none; /* Oculto inicialmente */
-  background-color: #333;
-  width: 100%;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  text-align: center;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Barra de pesquisa */
-.search-tech {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.search-tech input[type="text"] {
-  width: 400px;
-  margin-top: -15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px 0 0 10px;
-  outline: none;
-}
-
-.search-tech button {
-  padding: 10px 20px;
-  margin-top: -15px;
-  transition: 0.3;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-}
-.search-tech button:hover{
-  transform: scale(1.1);
-}
-
-.search-tech button:hover {
-  background-color: aqua;
-}
-
-/* Ajustes para telas grandes */
-@media (min-width: 768px) {
+   header a:hover{
+    transform: scale(0.9);
+    color: aqua;
+   }
+  /* Botão de menu */
+  .menu-button {
+    font-size: 1.2em;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos do menu */
   nav {
+    display: none; /* Oculto inicialmente */
+    background-color: #333;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    text-align: center;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Ajustes para telas grandes */
+  @media (min-width: 768px) {
+    nav {
       display: block;
       width: auto;
   }
