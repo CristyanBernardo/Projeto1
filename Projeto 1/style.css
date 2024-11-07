@@ -14,6 +14,7 @@ header {
     background-color: #333;
     box-shadow: 0px 0px 10px #333;
     color: #fff;
+    text-shadow: 2px 2px 4px aqua ;
   }
   
   /* Logo do header */
@@ -26,7 +27,6 @@ header {
   header h1:hover{
     transform: scale(0.9);
     color: aqua;
-    border-color: aqua;
   }
   
   header a{
@@ -69,6 +69,7 @@ header {
   
   nav ul li {
     text-align: center;
+    
   }
   
   nav ul li a {
