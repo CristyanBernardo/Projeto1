@@ -1,16 +1,14 @@
 $(document).ready(function() {
-    // Alterna a visibilidade do menu suspenso ao clicar no ícone
-    $('#createAccountBtn').on('click', function() {
-        $('#menuOptions').toggle();  // Alterna a exibição do menu
+    // Alterna a exibição do menu ao clicar no botão
+    $('#toggleMenuBtn').click(function(event) {
+        event.stopPropagation(); // Evita que o clique feche o menu imediatamente
+        $('#menuOptions').toggleClass('show');
     });
 
-    // Redirecionar para a página de cadastro
-    $('#registerOption').on('click', function() {
-        window.location.href = '/pagina-de-cadastro';  // Substitua pelo caminho real
-    });
-
-    // Redirecionar para a página de login
-    $('#loginOption').on('click', function() {
-        window.location.href = '/pagina-de-login';  // Substitua pelo caminho real
+    // Fecha o menu ao clicar fora dele
+    $(document).click(function(event) {
+        if (!$(event.target).closest('#menuOptions, #toggleMenuBtn').length) {
+            $('#menuOptions').removeClass('show');
+        }
     });
 });
