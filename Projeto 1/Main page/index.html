@@ -13,19 +13,27 @@
 <header>
     <h1>CN Tech</h1> 
 
+    <!--Menu de login e cadastro-->
     <button class="slide-button" id="toggleMenuBtn"><i class="bi bi-person-fill"></i></button>
-
 
     <ul class="dropdown-menu" id="menuOptions">
         <li id="registerOption">Cadastrar</li>
         <li id="loginOption">Login</li>
     </ul>
 
+    <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">
     <input type="text" name="query" placeholder="Digite sua pesquisa..." required>
     <button type="submit"><i class="bi bi-search"></i></button>
   </form>
 
+  <!--Carrinho de compra-->
+  <div class="cart-container">
+    <i class="bi bi-bag cart-icon"></i>
+    <span class="item-count">2</span>
+</div>
+
+<!--Lista de informação-->
     <nav>
       <ul>
         <li><a href="#home">Início</a></li>

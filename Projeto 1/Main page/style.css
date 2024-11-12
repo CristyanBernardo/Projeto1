@@ -104,12 +104,10 @@ nav ul li a {
   margin: 10px 0 0;
   position: absolute;
   width: 150px;
-  left: 13.5%;
-  top: 9%;
+  left: 12.5%;
+  top: 11%;
   border-radius: 10%;
   box-shadow: 0px 0px 10px #444 ;
-  
-
 }
 
 /* Estilo dos itens da lista */
@@ -122,11 +120,40 @@ nav ul li a {
 
 .dropdown-menu li:hover {
   background-color: #333;
+  color: aqua;
 }
 
 /* Classe para mostrar o menu suspenso com transição */
 .dropdown-menu.show {
   max-height: 500px; /* Ajuste a altura conforme o necessário */
+}
+
+ /* Estilo para o carrinho */
+ .cart-container {
+  position: fixed;
+  top: 26px;
+  right: 35%;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon {
+  font-size: 15px;
+  color: #333;
+}
+
+.item-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: aqua;
+  color: white;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 50%;
 }
 
 /* Barra de pesquisa */
