@@ -10,16 +10,9 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <    <!-- index.php -->
-    <?php
-include 'includes/index.php'; // Incluindo o cabeçalho
-?>
 
-    <h1>CN Tech</h1> 
-   
-    <?php
-// Você pode incluir um rodapé também
-include 'includes/index.php'; // Se houver um rodapé
+<?php
+include '../header/header.php';
 ?>
 
     <main>
