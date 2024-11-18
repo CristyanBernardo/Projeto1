@@ -6,10 +6,10 @@
     <title>CN Tech</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="../header/style.css"> <!-- Caminho para o CSS do header -->
     <script src="../header/script.js" defer></script> <!-- Caminho para o JS do header -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@ include '../header/header.php'; // Incluindo o cabeçalho
 ?>
 
     <main>
-        <form action="processo_cadastro.php" method="post">
+        <form action="cadastro.php" method="post">
 
             <div class="form-group">
             <label for="nome">Nome</label>
