@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../Assets/css"> <!-- CSS do cabeçalho -->
+    <link rel="stylesheet" href="../Assets/css/header.css"> <!-- Carregue primeiro o CSS do cabeçalho -->
+    <link rel="stylesheet" href="../Assets/css/cadastro.css"> <!-- Carregue primeiro o CSS do cabeçalho -->
+    <script src="../Assets/js/cadastro.js" defer></script>
+    
 </head>
 <body>
-    <?php include '../Includes/header.php'; ?> <!-- Incluindo cabeçalho -->
+    <?php include_once '../Includes/header.php'?> <!-- Incluindo cabeçalho -->
 
     <main>
         <form action="cadastro.php" method="post">
