@@ -28,16 +28,21 @@
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+
 .cadastro-main button {
+    display: flex; /* Usar flexbox para centralizar o botão */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-left: 30%; /* Espaçamento acima do botão */
     width: 50%; /* Largura total do botão */
     padding: 10px; /* Espaçamento interno */
     background-color: #00ffff; 
     color: rgb(0, 0, 0); /* Cor do texto */
-    border: none; /* Sem borda */
+    border: 1px solid #ccc; /* Sem borda */
     border-radius: 4px; /* Bordas arredondadas */
     font-size: 16px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
     transition: 0.3s; /* Transição suave para a cor de fundo */
+
     
 }
 
