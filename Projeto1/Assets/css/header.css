@@ -22,7 +22,7 @@ header h1 {
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
-  text-shadow: 2px 2px 4px aqua;
+  text-shadow: 2px 2px 4px #00ffff;
 }
 
 header h1:hover {
