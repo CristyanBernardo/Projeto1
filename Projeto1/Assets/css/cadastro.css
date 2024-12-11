@@ -1,10 +1,11 @@
 .cadastro-main {
     max-width: 500px; /* Largura máxima do formulário */
-    margin: 50px auto; /* Centraliza o formulário na página */
+    margin: 150px auto; /* Centraliza o formulário na página */
     padding: 20px; /* Espaçamento interno */
     background-color: #fff; /* Fundo branco para o formulário */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+   
 }
 
 .cadastro-main .form-group {
@@ -38,6 +39,7 @@
     background-color: #00ffff; 
     color: rgb(0, 0, 0); /* Cor do texto */
     border: 1px solid #ccc; /* Sem borda */
+    box-shadow: #333;
     border-radius: 4px; /* Bordas arredondadas */
     font-size: 16px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
