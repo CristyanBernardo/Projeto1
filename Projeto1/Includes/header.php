@@ -10,15 +10,18 @@
     <title>CN Tech</title>
 </head>
 <header>
-    <h1>CN Tech</h1> 
+    <h1 class="site-title">
+      <a href="index.php">CN Tech</a>
+  </h1> 
 
-    <!--Menu de login e cadastro-->
+    <!-- Menu de login e cadastro
     <button class="slide-button" id="toggleMenuBtn"><i class="bi bi-person-fill"></i></button>
 
     <ul class="dropdown-menu" id="menuOptions">
         <li id="registerOption">Cadastrar</li>
         <li id="loginOption">Login</li>
     </ul>
+    -->
 
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">

@@ -1,0 +1,24 @@
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: relative; /* Para garantir que o footer fique no final da página */
+    bottom: 0; /* Fixa o footer na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+.footer-content {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.social-links a {
+    color: #fff; /* Cor dos links */
+    margin: 0 10px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

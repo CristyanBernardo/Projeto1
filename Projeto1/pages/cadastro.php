@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../Assets/css/header.css">
     <link rel="stylesheet" href="../Assets/css/cadastro.css">
     <script src="../Assets/js/cadastro.js" defer></script> <!-- Incluindo JavaScript -->
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+    <script src="../Assets/js/footer.js"></script>
 </head>
 <body>
     <?php include_once '../Includes/header.php'?> <!-- Incluindo cabeçalho -->
@@ -37,6 +39,8 @@
             <button type="submit">Cadastrar</button> <!-- Botão de envio -->
         </form>
     </main>
+
+    <?php include_once '../Includes/footer.php'?> <!-- Incluindo cabeçalho -->
 
 </body>
 </html>
