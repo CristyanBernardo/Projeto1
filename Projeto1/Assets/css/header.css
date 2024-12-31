@@ -21,19 +21,30 @@ header {
   z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
+.text-login{
+font-size: medium;
+top: 26px;
+  right: 35%;
+}
+.text-cadastrar{
+  font-size: medium;
+  top: 26px;
+  right: 35%;
+  }
 /* Logo do header */
 
 .site-title a{
   font-size: 28px; /* Aumente o tamanho conforme necessário */
 }
-header h1 {
+
+h1 {
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
   text-shadow: 2px 2px 4px #00ffff;
 }
 
-header h1:hover {
+.text-header h1:hover {
   transform: scale(0.9);
   color: aqua;
 }
@@ -72,7 +83,7 @@ nav {
   width: 100%;
 }
 
-nav ul {
+ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -82,7 +93,7 @@ nav ul li {
   text-align: center;
 }
 
-nav ul li a {
+ nav ul li a {
   display: block;
   padding: 10px;
   color: #fff;
@@ -101,7 +112,7 @@ nav ul li a {
   text-align: center;
 }
 
-/* Menu suspenso (inicialmente oculto) */
+/* Menu suspenso (inicialmente oculto) 
 .dropdown-menu {
   max-height: 0;
   overflow: hidden;
@@ -119,7 +130,7 @@ nav ul li a {
   box-shadow: 0px 0px 10px #444 ;
 }
 
-/* Estilo dos itens da lista */
+/* Estilo dos itens da lista 
 .dropdown-menu li {
   padding: 8px;
   cursor: pointer;
@@ -134,11 +145,13 @@ nav ul li a {
   position: fixed;
 }
 
-/* Classe para mostrar o menu suspenso com transição */
+/* Classe para mostrar o menu suspenso com transição 
 .dropdown-menu.show {
-  max-height: 500px; /* Ajuste a altura conforme o necessário */
+  max-height: 500px;  Ajuste a altura conforme o necessário 
   position: fixed;
 }
+  */
+
 
  /* Estilo para o carrinho */
  .cart-container {

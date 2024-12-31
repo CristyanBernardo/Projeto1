@@ -9,7 +9,7 @@
     <script src="../Assets/js/header.js" defer></script>
     <title>CN Tech</title>
 </head>
-<header>
+<header class="text-header">
     <h1 class="site-title">
       <a href="index.php">CN Tech</a>
   </h1> 
@@ -22,6 +22,8 @@
         <li id="loginOption">Login</li>
     </ul>
     -->
+    <p  class="text-login"><a href="login.php" class="text-login">Login</a></p> <!-- Link para cadastro -->
+    <p  class="text-cadastrar"><a href="cadastro.php" class="text-cadastrar">Cadastre-se</a></p> <!-- Link para cadastro -->
 
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">
