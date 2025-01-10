@@ -9,7 +9,7 @@
     <script src="../Assets/js/header.js" defer></script>
     <title>CN Tech</title>
 </head>
-<header>
+<header class="text-header">
     <h1 class="site-title">
       <a href="index.php">CN Tech</a>
   </h1> 
@@ -22,8 +22,7 @@
         <li id="loginOption">Login</li>
     </ul>
     -->
-    <p class="icon-login"><a href="login.php">Login</a></p>
-    <p class="icon-login"><a href="cadastro.php">Cadastre-se</a></p>
+
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">
     <input type="text" name="query" placeholder="Digite sua pesquisa..." required>

@@ -53,15 +53,15 @@ input[type="password"] {
     background-color: aqua;
 }
 
-p {
+.login p {
     text-align: center;
 }
 
-a {
+.login a {
     color: #007bff;
     text-decoration: none;
 }
 
-a:hover {
+.login a:hover {
     text-decoration: underline;
 }
