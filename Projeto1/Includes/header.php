@@ -22,7 +22,8 @@
         <li id="loginOption">Login</li>
     </ul>
     -->
-
+    <p class="icon-login"><a href="login.php">Login</a></p>
+    <p class="icon-login"><a href="cadastro.php">Cadastre-se</a></p>
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">
     <input type="text" name="query" placeholder="Digite sua pesquisa..." required>
