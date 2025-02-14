@@ -21,18 +21,21 @@ header {
   z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
+/*Login e cadastro*/
 .text-login{
 font-size: medium;
-top: 26px;
-  right: 35%;
+position: relative;
+top: -12px;
+  right: 20px;
 }
 .text-cadastrar{
   font-size: medium;
-  top: 26px;
-  right: 35%;
+  position: relative;
+  top: -12px;
+  right: 50px;
   }
-/* Logo do header */
 
+/* Logo do header */
 .site-title a{
   font-size: 28px; /* Aumente o tamanho conforme necessário */
 }
@@ -164,7 +167,7 @@ Estilo dos itens da lista
  /* Estilo para o carrinho */
  .cart-container {
   position: fixed;
-  top: 26px;
+  top: 27px;
   right: 35%;
   background-color: #fff;
   border: 2px solid #ccc;
@@ -194,6 +197,9 @@ Estilo dos itens da lista
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  right: 100px;
+  position: relative;
+  
 }
 
 .search-tech input[type="text"] {
