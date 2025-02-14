@@ -14,14 +14,8 @@
       <a href="index.php">CN Tech</a>
   </h1> 
 
-    <!-- Menu de login e cadastro
-    <button class="slide-button" id="toggleMenuBtn"><i class="bi bi-person-fill"></i></button>
-
-    <ul class="dropdown-menu" id="menuOptions">
-        <li id="registerOption">Cadastrar</li>
-        <li id="loginOption">Login</li>
-    </ul>
-    -->
+    <p  class="text-login"><a href="login.php" class="text-login">Login</a></p> <!-- Link para cadastro -->
+    <p  class="text-cadastrar"><a href="cadastro.php" class="text-cadastrar">Cadastre-se</a></p> <!-- Link para cadastro -->
 
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">

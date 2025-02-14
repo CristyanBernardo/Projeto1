@@ -1,59 +1,57 @@
 .cadastro-main {
-    max-width: 500px; /* Largura máxima do formulário */
-    margin: 150px auto; /* Centraliza o formulário na página */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #fff; /* Fundo branco para o formulário */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-   
+    max-width: 500px;
+    margin: 20px auto; /* Margem menor e centralização horizontal */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 115px;
 }
 
 .cadastro-main .form-group {
-    margin-bottom: 15px; /* Espaçamento entre os grupos de formulário */
+    margin-bottom: 15px;
 }
 
 .cadastro-main label {
-    display: block; /* Faz o rótulo ocupar toda a largura */
-    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
-    font-weight: bold; /* Rótulo em negrito */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .cadastro-main input[type="text"],
 .cadastro-main input[type="email"],
 .cadastro-main input[type="password"],
-.cadastro-main input[type="tel"] {
-    width: 100%; /* Largura total do campo */
-    padding: 10px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda cinza */
-    border-radius: 4px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+.cadastro-main input[type="tel"],
+.cadastro-main input[type="date"]
+ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-
 .cadastro-main button {
-    display: flex; /* Usar flexbox para centralizar o botão */
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-left: 30%; /* Espaçamento acima do botão */
-    width: 50%; /* Largura total do botão */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #00ffff; 
-    color: rgb(0, 0, 0); /* Cor do texto */
-    border: 1px solid #ccc; /* Sem borda */
-    box-shadow: #333;
-    border-radius: 4px; /* Bordas arredondadas */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    transition: 0.3s; /* Transição suave para a cor de fundo */
-
-    
+    display: block; /* Para usar margin: 0 auto; */
+    margin: 10px auto; /* Centraliza o botão */
+    width: 50%;
+    padding: 10px;
+    background-color: #00ffff;
+    color: rgb(0, 0, 0);
+    border: none; /* Removido a borda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra correta */
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transição de background e transform */
 }
 
 .cadastro-main button:hover {
-    transform: scale(1.05);
+    background-color: #00cccc; /* Cor de fundo mais escura no hover */
+    transform: scale(1.05); /* Efeito de escala no hover */
 }
 
-/* Estilos de erro (opcional) */
 .cadastro-main .error {
-    color: red; /* Cor vermelha para mensagens de erro */
-    font-size: 14px; /* Tamanho da fonte */
+    color: red;
+    font-size: 14px;
 }
