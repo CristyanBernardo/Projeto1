@@ -10,9 +10,9 @@
     <script src="../Assets/js/footer.js"></script>
 </head>
 <body>
-     <?php
-      include_once '../Includes/header.php';
-     ?>
+
+     <?php include_once '../Includes/header.php';?>
+    <?php require_once '../Validacao de dados/validacao_login.php';?>
 
 <main class="login">
         <form action="login.php" method="post">

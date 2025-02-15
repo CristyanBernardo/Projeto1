@@ -1,6 +1,16 @@
 <?php
 require_once '../Validacao de dados/validacao_cadastro.php';
 
+// Inicializa o array $erros *ANTES* de qualquer outra coisa
+$erros = [
+    'nome' => '',
+    'data_nascimento' => '',
+    'email' => '',
+    'senha' => '',
+    'confirmar_senha' => '',
+    'telefone' => ''
+];
+
 // Mensagens de feedback
 $success_msg = "";
 $error_msg = "";
@@ -54,37 +64,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                <?php if (isset($erros['nome'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['nome']) && !empty($erros['nome'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
             </div>
 
             <div class="form-group">
                 <label for="nome">Data de nascimento</label>
                 <input type="date" id="data_nascimento" name="data_nascimento" required>
-                <?php if (isset($erros['data_nascimento'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['data_nascimento']) && !empty($erros['data_nascimento'])) { echo "<span class='error'>".$erros['data_nascimento']."</span>"; } ?>
             </div>
 
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu Email" required>
-                <?php if (isset($erros['email'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['email']) && !empty($erros['email'])) { echo "<span class='error'>".$erros['email']."</span>"; } ?>
             </div>
 
             <div class="form-group">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                <?php if (isset($erros['senha'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['senha']) && !empty($erros['senha'])) { echo "<span class='error'>".$erros['senha']."</span>"; } ?>
             </div>
 
             <div class="form-group">
                 <label for="confirmar_senha">Confirmar Senha</label>
                 <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
-                <?php if (isset($erros['confirmar_senha'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['confirmar_senha']) && !empty($erros['confirmar_senaha'])) { echo "<span class='error'>".$erros['confirmar_senha']."</span>"; } ?>
             </div>
 
             <div class="form-group">
                 <label for="telefone">Telefone</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
-                <?php if (isset($erros['telefone'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
+                <?php if (isset($erros['telefone']) && !empty($erros['telefone'])) { echo "<span class='error'>".$erros['telefone']."</span>"; } ?>
             </div>
 
             <button type="submit">Cadastrar</button> <!-- Botão de envio -->

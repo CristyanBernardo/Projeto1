@@ -13,4 +13,5 @@ function conectarAoBancoDeDados() {
         return null; // Retorna null em caso de erro
     }
 }
+
 ?>
