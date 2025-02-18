@@ -14,4 +14,9 @@ function conectarAoBancoDeDados() {
     }
 }
 
+$mysqli = conectarAoBancoDeDados(); // Cria a conexão e armazena em $mysqli
+if ($mysqli === null) {
+    die("Erro ao conectar ao banco de dados."); // Finaliza o script se a conexão falhar
+}
+
 ?>

@@ -27,6 +27,9 @@ function validarCadastro($dados) {
     if (empty($dados['telefone'])) {
         $erros['telefone'] = "O telefone é obrigatório.";
     }
+    if (empty($dados['cpf'])) {
+        $erros['cpf'] = "O CPF é obrigatório.";
+    }
 
     return $erros;
 }

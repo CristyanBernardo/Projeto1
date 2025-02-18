@@ -8,7 +8,8 @@ $erros = [
     'email' => '',
     'senha' => '',
     'confirmar_senha' => '',
-    'telefone' => ''
+    'telefone' => '',
+    'cpf' => ''
 ];
 
 // Mensagens de feedback
@@ -23,7 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'email' => isset($_POST['email']) ? trim($_POST['email']) : '',
         'senha' => isset($_POST['senha']) ? $_POST['senha'] : '',
         'confirmar_senha' => isset($_POST['confirmar_senha']) ? $_POST['confirmar_senha'] : '',
-        'telefone' => isset($_POST['telefone']) ? trim($_POST['telefone']) : ''
+        'telefone' => isset($_POST['telefone']) ? trim($_POST['telefone']) : '',
+        'cpf' => isset($_POST['cpf']) ? trim($_POST['cpf']) : ''
     ];
 
     $erros = validarCadastro($dados);
@@ -61,11 +63,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Formulário HTML -->
     <main class="cadastro-main">
         <form action="cadastro.php" method="post">
+
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                 <?php if (isset($erros['nome']) && !empty($erros['nome'])) { echo "<span class='error'>".$erros['nome']."</span>"; } ?>
             </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                <?php if (isset($erros['cpf']) && !empty($erros['cpf'])) { echo "<span class='error'>".$erros['cpf']."</span>"; } ?>
+            </div>
+
 
             <div class="form-group">
                 <label for="nome">Data de nascimento</label>
