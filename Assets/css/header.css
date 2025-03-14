@@ -52,7 +52,7 @@ header {
   margin-right: 10px; /* Espaçamento padrão */
 }
 
-.text-login, .text-cadastrar {
+.text-login, .text-cadastrar{
   font-size: medium;
   color: #fff;
   text-decoration: none;
@@ -240,3 +240,15 @@ nav a:hover {
   }
 }
 
+.dropdown-perfi, .perfil{
+  font-size: 28px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  text-shadow: 2px 2px 4px aqua;
+}
+
+.dropdown-perfi:hover{
+  transform: scale(0.9);
+  color: aqua;
+}
