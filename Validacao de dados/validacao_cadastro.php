@@ -40,13 +40,39 @@ function cadastrarUsuario($dados) {
     if ($conn === null) {
         return "Erro ao conectar ao banco de dados.";
     }
+    
+    $stmt_check = $conn->prepare("SELECT email, cpf FROM usuarios WHERE email = ? OR cpf = ?");
+    if ($stmt_check) {
+        $stmt_check->bind_param("ss", $dados['email'], $dados['cpf']);
+        $stmt_check->execute();
+        $stmt_check->store_result();
+        var_dump($stmt_check->error); // Verifique erros na consulta preparada
 
+        if ($stmt_check->num_rows > 0 && $stmt_check) { // Verificação crucial aqui
+            $result = $stmt_check->get_result();
+            if ($result) { // Verifique se get_result() foi bem-sucedido
+                $dado = $result->fetch_assoc();
+                if ($dado['email'] == $dados['email']) {
+                    return "Já existe um usuário com este email.";
+                } else {
+                    return "Já existe um usuário com este CPF.";
+                }
+            } else {
+                error_log("Erro ao obter resultado da consulta: " . $stmt_check->error);
+                return "Erro na verificação de usuário.";
+            }
+        }
+        $stmt_check->close();
+    } else {
+        return "Erro na preparação da consulta de verificação: " . $conn->error;
+    }
+  
     $senha_hash = password_hash($dados['senha'], PASSWORD_DEFAULT);
 
-    $stmt = $conn->prepare("INSERT INTO usuarios (nome, data_nascimento, email, senha, telefone) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO usuarios (nome, data_nascimento, email, senha, telefone, cpf) VALUES (?, ?, ?, ?, ?, ?)");
 
     if ($stmt) {
-        $stmt->bind_param("sssss", $dados['nome'], $dados['data_nascimento'], $dados['email'], $senha_hash, $dados['telefone']);
+        $stmt->bind_param("ssssss", $dados['nome'], $dados['data_nascimento'], $dados['email'], $senha_hash, $dados['telefone'], $dados['cpf']);
 
         if ($stmt->execute()) {
             return true; // Cadastro realizado com sucesso
@@ -63,4 +89,5 @@ function cadastrarUsuario($dados) {
     }
     $conn->close();
 }
+
 ?>

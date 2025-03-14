@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label for="cpf">CPF</label>
-                <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                <input type="tel" id="cpf" name="cpf" placeholder="000.000.000-00" required>
                 <?php if (isset($erros['cpf']) && !empty($erros['cpf'])) { echo "<span class='error'>".$erros['cpf']."</span>"; } ?>
             </div>
 
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 000000-0000" required>
                 <?php if (isset($erros['telefone']) && !empty($erros['telefone'])) { echo "<span class='error'>".$erros['telefone']."</span>"; } ?>
             </div>
 

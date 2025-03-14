@@ -1,5 +1,5 @@
 <?php
-require_once '../config/usuarios.php'; // Inclui o arquivo com a validação unificada
+require_once '../Validacao de dados/usuarios.php'; // Inclui o arquivo com a validação unificada
 
 $erro = [];
 
