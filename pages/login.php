@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $erro = validarLogin($dados); // Chama a função de validação
 
     if ($erro === true) {
-        header("Location: index.php");
+        header("Location: ../Logado/index.php");
         exit();
     }else {
         var_dump($erro); // Exibe os erros para debugging
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="login">
         <form action="login.php" method="post">
             <div class="form-group">
-                <label for="username">Nome de Usuário ou E-mail</label>
+                <label for="username">E-mail</label>
                 <input type="text" id="username" name="username" required>
             </div>
             <div class="form-group">

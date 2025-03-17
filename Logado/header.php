@@ -15,12 +15,8 @@
   </h1> 
 
 
-<div class="dropdown-perfil">
-  <a href="perfil.php">Meu Perfil</a>
-  <a href="logout.php">Logout</a>
-</div>
-
-<p class="perfil"><a href="perfil.php">Meu Perfil</a></p>
+<p class="text-perfil"><a href="perfil.php">Meu Perfil</a></p>
+<p class="text-logout"><a href="../pages/index.php">Logout</a></p>
 
     <!--Barra de pesquisa-->
     <form action="resultados.php" method="GET" class="search-tech">

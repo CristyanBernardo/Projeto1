@@ -60,7 +60,7 @@ header {
   text-shadow: 2px 2px 4px aqua;
 }
 
-.text-login:hover, .text-cadastrar:hover {
+.text-login:hover, .text-cadastrar:hover{
   transform: scale(0.9);
   color: aqua;
 }
@@ -240,15 +240,15 @@ nav a:hover {
   }
 }
 
-.dropdown-perfi, .perfil{
-  font-size: 28px;
-  text-decoration: none;
+.text-perfil a , .text-logout a{
+  font-size: medium;
   color: #fff;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: 0.2s;
   text-shadow: 2px 2px 4px aqua;
 }
 
-.dropdown-perfi:hover{
+.text-perfil a:hover, .text-logout a:hover {
   transform: scale(0.9);
   color: aqua;
 }
